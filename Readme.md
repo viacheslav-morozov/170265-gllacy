@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Вячеслав Морозов](https://up.htmlacademy.ru/htmlcss/13/user/170265).
-* Наставник: `Неизвестно`.
+* Наставник: [Владимир Меркулов](https://htmlacademy.ru/profile/straniks).
 
 ---
 
