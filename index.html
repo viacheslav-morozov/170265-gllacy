@@ -1,12 +1,301 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+  	<title>Gllacy - Главная</title>
+	<meta charset="utf-8">
   </head>
   <body>
+    <input type="radio" id="btn-1" name="toggle" checked>
+    <input type="radio" id="btn-2" name="toggle">
+    <input type="radio" id="btn-3" name="toggle">
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+    <div class="site-wrapper">
+	    <header>
+	      <div class="header-layout-column-left">
+	        <div class="header-logo">
+	          <img src="http://placehold.it/150x100" alt="logo">
+	        </div>
 
+			    <ul class="header-menu">
+			      <li><a href="#shop">Каталог</a>
+			        <div class="header-sub-menu-wrapper">
+				        <ul class="header-sub-menu">
+				          <li><a class="header-sub-menu-new" href="#">Новинки</a></li>
+				          <li><a href="catalog.html">Сливочное</a></li>
+				          <li><a href="#">Щербеты</a></li>
+				          <li><a href="#">Фруктовый лед</a></li>
+				          <li><a href="#">Мелорин</a></li>
+				        </ul>
+			        </div>
+			      </li>
+
+			      <li><a href="#price">Доставка и оплата</a></li>
+			      <li><a href="#info">О Компании</a></li>
+			    </ul>
+	      </div>
+
+	      <div class="header-layout-column-right">
+	        <div class="header-search">
+	          <a class="header-search-link" href="#search">Поиск</a>
+
+	          <div class="search-field-wrapper">
+		          <div class="search-field">
+		            <form action="https://echo.htmlacademy.ru" method="get">
+		              <input type="text" name="search" placeholder="Что ищем?" required>
+		            </form>
+		          </div>
+		        </div>
+	        </div>
+
+	        <div class="header-login">
+	          <a class="header-login-link" href="#login">Вход</a>
+
+	          <div class="login-field-wrapper">
+		          <div class="login-field">
+		            <form action="https://echo.htmlacademy.ru" method="post">
+		              <input type="email" name="email" placeholder="Электронная почта" required>
+
+		              <input type="password" name="pass" placeholder="Пароль" required>
+
+		              <input type="submit" value="Войти" name="submit_button">
+
+		              <a href="#">Забыли пароль?</a>
+
+		              <a href="#">Новая регистрация</a>
+		            </form>
+		          </div>
+	          </div>
+	        </div>
+
+	        <div class="header-cart">
+	          <a class="header-cart-link" href="#cart">Пусто</a>
+
+	          <div class="cart-field-wrapper">
+		          <div class="cart-field">
+			          <table class="cart-table">
+			            <tr>
+			          	  <td><a class="item-delete" title="Удалить"></a></td>
+			          	  <td><img src="http://placehold.it/150x100" alt="orange"></td>
+			          	  <td>Пломбир с апельсиновым джемом</td>
+			          	  <td>1,5 кг<span> x 200 руб.</span></td>
+			          	  <td>300 руб.</td>
+			          	</tr>
+
+			          	<tr>
+			          	  <td><a class="item-delete" title="Удалить"></a></td>
+			          	  <td><img src="http://placehold.it/150x100" alt="strawberry"></td>
+			          	  <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+			          	  <td>1,5 кг<span> x 300 руб.</span></td>
+			          	  <td>450 руб.</td>
+			          	</tr>
+			          </table>
+
+		            <div class="cart-field-price-wrapper">
+		              <p class="cart-field-price">Итого: 750 руб.</p>
+		            </div>
+
+		            <a class="cart-field-button button" href="#make_order">Оформить заказ</a>
+		          </div>
+	          </div>
+	        </div>
+	      </div>
+	    </header>
+
+	    <main>
+	      <div class="info">
+	        <div class="schedule">С 10 до 20, ежедневно</div>
+
+	        <a class="tel" href="tel:+78124502525">8 812 450-25-25</a>
+	      </div>
+
+	      <div class="slider">
+	        <div class="slider-controls">
+	          <label for="btn-1"></label>
+	          <label for="btn-2"></label>
+	          <label for="btn-3"></label>
+	        </div>
+
+	        <div class="slide" id="slide-1">
+	          <div class="slider-title">Крем-брюле и пломбир с малиновым джемом</div>
+	          <a class="slider-button button" href="#1">Давайте оба!</a>
+	        </div>
+
+	        <div class="slide" id="slide-2">
+	          <div class="slider-title">Шоколадный пломбир и лимонный сорбет</div>
+	          <a class="slider-button button" href="#1">Давайте оба!</a>
+	        </div>
+
+	        <div class="slide" id="slide-3">
+	          <div class="slider-title">Пломбир с помадкой и клубничный щербет</div>
+	          <a class="slider-button button" href="#1">Давайте оба!</a>
+	        </div>
+	      </div>
+
+	      <div class="banner-wrapper">
+	        <div class="banner-left">
+	          <b>Малинка даром!</b>
+
+	          <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+
+	          <a class="banner-button button" href="#1">Хочу варенье!</a>
+	        </div>
+
+	        <div class="banner-right">
+	          <b>Шоколадки даром!</b>
+
+	          <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+
+	          <a class="banner-button button" href="#1">Хочу шоколадки!</a>
+	        </div>
+	      </div>
+
+	      <ul class="products">
+	        <li>
+	          <div class="products-image products-hit">
+	            <img src="http://placehold.it/150x100" alt="orange">
+
+	            <p class="products-price">
+	              <span>310<img src="http://placehold.it/150x100" alt="rub"></span>/кг
+	            </p>
+	          </div>
+
+	          <a class="products-title" href="#1">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+	        </li>
+
+	        <li>
+	          <div class="products-image products-hit">
+	            <img src="http://placehold.it/150x100" alt="coffee">
+
+	            <p class="products-price"><span>380<img src="http://placehold.it/150x100" alt="rub"></span>/кг</p>
+	          </div>
+
+	          <a class="products-title" href="#1">Сливочно-кофейное с кусочками шоколада</a>
+	        </li>
+
+	        <li>
+	          <div class="products-image products-hit">
+	            <img src="http://placehold.it/150x100" alt="strawberry">
+
+	            <p class="products-price"><span>355<img src="http://placehold.it/150x100" alt="rub"></span>/кг</p>
+	          </div>
+
+	          <a class="products-title" href="#1">Сливочно-клубничное с присыпкой из белого шоколада</a>
+	        </li>
+
+	        <li>
+	          <div class="products-image products-hit">
+	            <img src="http://placehold.it/150x100" alt="caramel">
+
+	            <p class="products-price"><span>415<img src="http://placehold.it/150x100" alt="rub"></span>/кг</p>
+	          </div>
+
+	          <a class="products-title" href="#1">Сливочное крем-брюле с карамельной подливкой</a>
+	        </li>
+	      </ul>
+
+	      <div class="seo">
+	        <h1>Магазин Глейси &#160;— это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
+
+	        <div class="seo-top">
+	          <p class="seo-paragraph">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+
+	          <p class="seo-paragraph">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>	          
+	        </div>
+
+	        <div class="seo-bottom">
+	          <p class="seo-paragraph">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты произведены из натурального, экологически чистого сырья.</p>
+
+	          <p class="seo-paragraph">Доставка нашего мороженого до заказчиков&#160; осуществляется в&#160;специальном термопаке, которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
+	        </div>
+	      </div>
+
+	      <div class="subscribe-and-news-wrapper">
+	        <div class="blog-news">
+	          <p>Новое в нашем блоге</p>
+
+	          <a href="#blog_news">10&#160; способов сервировки фруктовых щербетов к&#160;столу</a>
+	        </div>
+
+	        <div class="subscribe-wrapper">
+	          <div class="subscribe">
+	            <p>Подпишитесь на нашу сладкую рассылку и&#160;будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+
+	            <div class="subscribe-form">
+	              <form action="https://echo.htmlacademy.ru" method="post">
+	                <input type="email" id="email" placeholder="Электронная почта"  required>
+	                <input type="submit" value="Отправить" name="subscribe">
+	              </form>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+
+	    </main>
+
+	    <div class="contacts">
+	      <div class="contacts-map" id="ya-map"></div>
+
+	      <div class="contacts-info">
+	        <p>Адрес главного офиса и<br> офлайн магазина:</p>
+
+	        <p><b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
+
+	        <p>Для заказов по телефону:</p>
+
+              <p><b>8 812 450-25-25</b></p>
+
+	        <p>(с 10 до 20 ежедневно)</p>
+
+	        <a class="contacts-info-button button" href="feedback_form.html">Форма обратной связи</a>
+
+	        <div class="feedback-form-overlay"></div>
+
+	        <div class="feedback-form">
+	          <form action="https://echo.htmlacademy.ru" method="post">
+	            <button class="feedback-form-close" type="button" title="Закрыть"></button>
+
+	            <p>Мы обязательно вам ответим!</p>
+
+	            <input type="text" name="username" placeholder="Как вас зовут?" >
+
+	            <input type="email" name="email" placeholder="Ваша почта для ответа?" >
+
+	            <textarea name="comment" placeholder="Напишите что-нибудь..." ></textarea>
+
+	            <input type="submit" value="Отправить" name="send_form">
+	          </form>
+	        </div>
+	      </div>
+	    </div>
+
+	    <footer>
+        <ul class="footer-social">
+          <li><a class="icon icon-twit" href="#twitter">twitter</a></li>
+          <li><a class="icon icon-inst" href="#instagram">instagram</a></li>
+          <li><a class="icon icon-fb" href="#facebook">facebook</a></li>
+          <li><a class="icon icon-vk" href="#vkontakte">vkontakte</a></li>
+        </ul>
+
+	    <div class="footer-sub-menu">
+	      <div class="sub-menu-left">
+	        <a class="sub-menu-marked" href="#1">Для поставщиков</a>
+
+	        <a href="#1">О производстве</a>
+	      </div>
+
+	      <div class="sub-menu-right">
+	        <a href="#1">Наши документы</a>
+
+	        <a href="#1">Экологические стандарты</a>
+	      </div>
+	    </div>
+
+	    <div class="footer-developer">
+	      <img src="http://placehold.it/150x100" alt="dev_logo">
+
+	      <p>Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> &#169; 2016</p>
+	    </div>
+	  </footer>
+    </div>
   </body>
 </html>
